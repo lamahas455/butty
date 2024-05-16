@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Group Member - Beauty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script>
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const members = ['ريماس مذكر المطيري', 'لمى سمير الدهاش', '441008974@stu.ut.edu.sa', 'lskd67@icloud.com '];
+      const shuffledMembers = shuffleArray(members);
+      const memberList = document.getElementById('member-list');
+
+      shuffledMembers.forEach(function (member) {
+        const li = document.createElement('li');
+        li.textContent = member;
+        memberList.appendChild(li);
+      });
+    });
+  </script>
+
+<style>
+    .members-section {
+      text-align: center;
+    }
+
+    .members-section h2 {
+      text-align: center;
+    }
+
+    .members-section ul {
+      display: inline-block;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="Beauty Logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Our Product</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="group_member.html">Group Member</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h1>About Us</h1>
+    <div class="image-container">
+      <img src="./images/logo.png" alt="Beauty Logo">
+    </div>
+    
+    <div class="members-section" >
+      <h2>Group Members</h2>
+      <ul id="member-list"></ul>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Beauty. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

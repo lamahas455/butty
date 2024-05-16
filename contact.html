@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us - Beauty</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="./images/logo.png" alt="Beauty Logo">
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Our Product</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="group_member.html">Group Member</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+      <section>
+        <h1>Contact Us</h1>
+        <div class="form-container">
+          <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter a valid email address" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+          
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter a valid phone number" pattern="05[0-9]{8}" title="Please enter a valid 10-digit phone number starting with 05">
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+          
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <h1 style="text-align: center;">Visit Us</h1>
+        <table style="border: 1px solid #ccc; width: 600px; margin: 20px auto; padding: 10px; text-align: center;">
+          <tr>
+            <td style="font-weight: bold; border: 1px solid #ccc;">Location:</td>
+            <td style="border: 1px solid #ccc;">KSA - AL Madinah AL Munawwarah</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; border: 1px solid #ccc;">Address:</td>
+            <td style="border: 1px solid #ccc;">Ibrahim Al Khalil Street</td>
+          </tr>
+          <tr>
+            <td style="font-weight: bold; border: 1px solid #ccc;">Contact Phone:</td>
+            <td style="border: 1px solid #ccc;">+966 512345678</td>
+          </tr>
+        </table>
+      </section>
+  
+      <footer>
+        <div class="footer-content">
+          <p>&copy; 2024 Beauty. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
